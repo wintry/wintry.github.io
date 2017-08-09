@@ -1,0 +1,27 @@
+# Site settings
+name: 东南偏南的博客
+email: codexu@foxmail.com
+author: codexu
+url: http://codexu.site
+resume_site: http://codexu.site/me/
+github: https://github.com/wintry/
+baseurl: ""  #根目录
+description: you don't need sex,life fucks you everyday
+motto: 搞it的,未来大概修(jian)电(la)脑(ji)。
+#motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
+banner: 这家伙很懒,什么都没留下。
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+excerpt_separator:  '<!-- more -->' #文章摘要
+paginate: 8
+paginate_path: "page:num"
+plugins: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+github_username: wintry
+highlighter: rouge
+markdown: kramdown
+FB:
+  comments :
+    provider : disqus
+    disqus :
+        short_name : xiaokedada
