@@ -1,6 +1,6 @@
 ---
 layout: copy
-title: 哎呦喂！！！
+title: 个人书签
 date: 2017-04-01 13:15:15 +0800
 permalink: /reference/
 ---
@@ -8,17 +8,52 @@ permalink: /reference/
 <style>
 abbr {text-decoration: none;}
 </style>
-<hr><h4 class="btn btn-info btn-lg">JavaScript相关</h4><hr>
+
+<form action="http://www.google.com/search"   name=f>  
+    <span   id=hf></span>  
+    <table   cellspacing=0   cellpadding=0>  
+        <tr   valign=middle>  
+            <td   width=75>&nbsp;</td>  
+            <td   align=center>  
+                <input   maxLength=256   size=55   name=q   value="">     
+                  <script>     
+                  document.f.q.focus();     
+                  </script>     
+                <input   type=hidden   name=ie   value="UTF-8">  
+                <input   type=hidden   name=oe   value="UTF-8">  
+                <input   name=hl   type=hidden   value=zh-CN>  
+                <br>  
+                <input   type=submit   value="Google搜索"   name=btnG>  
+                <input   type=submit   value="手气不错"   name=btnI>  
+            </td>  
+            <td   valign=top   nowrap>  
+                <font   size=-1>&nbsp;&#8226;&nbsp;<a   href=http://www.google.com/advanced_search?hl=zh-CN>高级搜索</a><br>&nbsp;&#8226;&nbsp;  
+                <a   href=http://www.google.com/preferences?hl=zh-CN>使用偏好</a><br>&nbsp;&#8226;&nbsp;  
+                <a   href=http://www.google.com/language_tools?hl=zh-CN>语言工具</a>  
+                </font>  
+            </td>  
+        </tr>  
+        <tr>  
+            <td   colspan=3   align=center>  
+                <font   size=-1>  
+                <input   id=all   type=radio   name=lr   value=""   checked>  
+                <label   for=all>搜索所有网站</label>  
+                <input   id=ch   type=radio   name=lr   value=lang_zh-CN|lang_zh-TW   >  
+                <label   for=ch>搜索所有中文网页</label>  
+                <input   id=il   type=radio   name=lr   value=lang_zh-CN   >  
+                <label   for=il>搜索简体中文网页</label>  
+                </font>  
+            </td>  
+        </tr>  
+      </table>  
+</form></form>  
+
+<hr><h4 class="btn btn-info btn-lg">bbs</h4><hr>
 <ol class="rectangle-list">
-<li><a href="http://react-china.org/" target="_blank">React China</a></li>
-<li><a href="http://www.jstips.co/" target="_blank"><abbr title="每天提供一个JavaScript小tip">JS TIPS</abbr></a></li>
-<li><a href="http://javascript-puzzlers.herokuapp.com/" target="_blank"><abbr title="也许你并不太懂JavaScript">JavaScript Puzzlers!</abbr></a></li>
-<li><a href="https://jsperf.com/" target="_blank"><abbr title="js性能测试网站">js perf</abbr></a></li>
-<!--js库-->
-<li><a href="https://threejs.org/" target="_blank">three.js</a></li>
-<li><a href="http://www.jq22.com/" target="_blank">jQuery 插件库</a></li>
-<li><a href="http://www.typescriptlang.org/index.html" target="_blank">TypeScript</a></li>
-<li><a href="https://babeljs.io/" target="_blank">Babel</a></li>
+<li><a href="https://www.v2ex.com/" target="_blank">v2ex</a></li>
+<li><a href="https://ourbits.club/" target="_blank">ourbits</a></li>
+<li><a href="https://steamcn.com/forum.php" target="_blank">steamcn</a></li>
+<li><a href="https://www.chiphell.com/forum.php" target="_blank">CHH</a></li>
 </ol>
 <hr><h4 class="btn btn-primary btn-lg">Node相关</h4><hr>
 <ol class="rounded-list">
