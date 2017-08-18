@@ -60,7 +60,7 @@ public class User {
     }
 }
 ```
-这是一个简单的POJO,属性+设置+获取+toString,三个属性的类写了将近30行代码
+这是一个简单的POJO,属性+设置+获取,三个属性的类写了将近30行代码
 
 Kotlin:
 ```yaml
@@ -117,27 +117,27 @@ var str7: String? = "testNull"
 
 第8行，不需多解释，str7可为null，同时赋值为"testNull"；
 
-**注意：此文为了格式统一，没有将编译或运行出错的代码注释，分享的项目代码中是可以正常编译并运行的。**
+**注意：此文为了格式统一，没有将编译或运行出错的代码注释**
 
 解释完变量定义时关于空的概念，接下来就该看看这种保护机制能否真的让我们省心。就拿获取字串的长度为例，Kotlin中String类有个length属性，即调用方式为strObject.length。
 
 talk is cheap show me the code
 
 ```
-var str2: String? = null
-println("str2.length: " + str2.length)  //compile error
-println("str2?.length: " + str2?.length)  //print null
-println("str2!!.length: " + str2!!.length)  //run exception
-if (str2 != null) {
-    println("str2!!.length: " + str2!!.length)  //don't run
-}
-str2 = "testNull"  //assign
-println("str2.length: " + str2.length)  //print 8
-println("str2?.length: " + str2?.length)  //print 8
-println("str2!!.length: " + str2!!.length)  //print 8
-if (str2 != null) {
-    println("str2!!.length: " + str2.length)  //print 8
-}
+1  var str2: String? = null
+2  println("str2.length: " + str2.length)  //compile error
+3  println("str2?.length: " + str2?.length)  //print null
+4  println("str2!!.length: " + str2!!.length)  //run exception
+5  if (str2 != null) {
+6    println("str2!!.length: " + str2!!.length)  //don't run
+7  } 
+8  str2 = "testNull"  //assign
+9  println("str2.length: " + str2.length)  //print 8
+10 println("str2?.length: " + str2?.length)  //print 8
+11 println("str2!!.length: " + str2!!.length)  //print 8
+12 if (str2 != null) {
+13    println("str2!!.length: " + str2.length)  //print 8
+14 }
 ```
 第2行，编译错误，因为之前只是将str2声明为可以是null同时赋值为null，所以紧接着访问其length属性是不允许的；
 
