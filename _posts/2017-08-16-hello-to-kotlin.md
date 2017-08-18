@@ -90,14 +90,14 @@ Kotlin对象创建不用加new关键字，而且语句后面不用加分号";"�
 对于Java代码，编译器不会强制每次使用引用变量之前进行null判断，即异常往往会在运行时报出，而这正是危险所在。
 
 ```
-var str1: String = null  //Null can not be a value of a non-null type String
-var str2: String? = null  //str2 can be null
-var str3 = "testNull"  //non-null--String type
-var str4 = null  //null
-var str5: String  //non-null--String type
-str5 = "testNull"  //assigned String value
-var str6  //no type or initialization
-var str7: String? = "testNull"
+1 var str1: String = null  //Null can not be a value of a non-null type String
+2 var str2: String? = null  //str2 can be null
+3 var str3 = "testNull"  //non-null--String type
+4 var str4 = null  //null
+5 var str5: String  //non-null--String type
+6 str5 = "testNull"  //assigned String value
+7 var str6  //no type or initialization
+8 var str7: String? = "testNull"
 ```
 
 
