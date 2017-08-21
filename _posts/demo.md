@@ -3,12 +3,12 @@ layout: post
 title: "欢迎"
 date: 2017-08-09 11:00:00 +0800 
 categories: 欢迎
-tag: 欢迎
+tag: [taga,tagb]
 ---
 * content
 {:toc}
 
-欢迎
+这里写缩略
 
 <!-- more -->
 <!-- TOC -->
