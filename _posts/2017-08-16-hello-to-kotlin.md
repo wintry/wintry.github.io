@@ -28,7 +28,7 @@ Kotlin由JetBrains公司开发，于2010年首次推出，次年开源。它与J
 
 java:
 
-```yaml
+```java
 
 public class User {
     private long id;
@@ -63,7 +63,7 @@ public class User {
 这是一个简单的POJO,属性+设置+获取,三个属性的类写了将近30行代码
 
 Kotlin:
-```yaml
+```java
 data class User(
 var id: Long,
 	var uerName: String,
