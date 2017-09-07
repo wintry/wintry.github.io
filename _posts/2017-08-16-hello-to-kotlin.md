@@ -4,7 +4,7 @@ title: "Kotlin:从对比
 Java开始"
 date: 2017-08-16 11:00:00 +0800 
 categories: Kotlin
-tag: [Kotlin,Android,Java]
+tag: [ Kotlin , Android , Java]
 ---
 * content
 {:toc}
@@ -31,7 +31,7 @@ java:
 ```java
 
 public class User {
-    private long id;
+   private long id;
     private String userName;
     private String pwd;
 
@@ -44,19 +44,19 @@ public class User {
     }
 
     public String getUserName() {
-        return name;
+        return userName;
     }
 
-    public void setUserName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPwd() {
-        return blog;
+        return pwd;
     }
 
-    public void setPwd(String blog) {
-        this.blog = blog;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 }
 ```
