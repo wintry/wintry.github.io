@@ -32,7 +32,7 @@
 * 掌握的python框架：sanic,flask
 * 掌握的数据库：postgresql,mysql,redis
 * 掌握项目构建工具：maven
-* 掌握项目管理和协同工具的使用：git
+* 掌握项目管理和协同工具：git
 
 
 
