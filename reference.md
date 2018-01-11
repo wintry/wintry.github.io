@@ -9,44 +9,7 @@ permalink: /reference/
 abbr {text-decoration: none;}
 </style>
 
-<form action="http://www.google.com/search"   name=f>  
-    <span   id=hf></span>  
-    <table   cellspacing=0   cellpadding=0>  
-        <tr   valign=middle>  
-            <td   width=75>&nbsp;</td>  
-            <td   align=center>  
-                <input   maxLength=256   size=55   name=q   value="">     
-                  <script>     
-                  document.f.q.focus();     
-                  </script>     
-                <input   type=hidden   name=ie   value="UTF-8">  
-                <input   type=hidden   name=oe   value="UTF-8">  
-                <input   name=hl   type=hidden   value=zh-CN>  
-                <br>  
-                <input   type=submit   value="Google搜索"   name=btnG>  
-                <input   type=submit   value="手气不错"   name=btnI>  
-            </td>  
-            <td   valign=top   nowrap>  
-                <font   size=-1>&nbsp;&#8226;&nbsp;<a   href=http://www.google.com/advanced_search?hl=zh-CN>高级搜索</a><br>&nbsp;&#8226;&nbsp;  
-                <a   href=http://www.google.com/preferences?hl=zh-CN>使用偏好</a><br>&nbsp;&#8226;&nbsp;  
-                <a   href=http://www.google.com/language_tools?hl=zh-CN>语言工具</a>  
-                </font>  
-            </td>  
-        </tr>  
-        <tr>  
-            <td   colspan=3   align=center>  
-                <font   size=-1>  
-                <input   id=all   type=radio   name=lr   value=""   checked>  
-                <label   for=all>搜索所有网站</label>  
-                <input   id=ch   type=radio   name=lr   value=lang_zh-CN|lang_zh-TW   >  
-                <label   for=ch>搜索所有中文网页</label>  
-                <input   id=il   type=radio   name=lr   value=lang_zh-CN   >  
-                <label   for=il>搜索简体中文网页</label>  
-                </font>  
-            </td>  
-        </tr>  
-      </table>  
-</form></form>  
+
 
 <hr><h4 class="btn btn-info btn-lg">bbs</h4><hr>
 <ol class="rectangle-list">
@@ -54,7 +17,28 @@ abbr {text-decoration: none;}
 <li><a href="https://ourbits.club/" target="_blank">ourbits</a></li>
 <li><a href="https://steamcn.com/forum.php" target="_blank">steamcn</a></li>
 <li><a href="https://www.chiphell.com/forum.php" target="_blank">CHH</a></li>
+<li><a href="https://hacpai.com/" target="_blank">黑客派</a></li>
+<li><a href="http://tieba.baidu.com/" target="_blank">百度贴吧</a></li>
 </ol>
+
+<hr><h4 class="btn btn-primary btn-lg">game</h4><hr>
+<ol class="rounded-list">
+<li><a href="http://store.steampowered.com/" target="_blank">steam</a></li>
+<li><a href="https://store.playstation.com/zh-hans-hk/home/games" target="_blank">psn</a></li>
+<li><a href="http://www.psnine.com/" target="_blank">psnine</a></li>
+<li><a href="http://bundle.ccyycn.com/" target="_blank">驰游包包</a></li>
+<li><a href="http://www.douyutv.com/" target="_blank">斗鱼</a></li>
+<li><a href="http://www.panda.tv/" target="_blank">pandaTV</a></li>
+</ol>
+
+<hr><h4 class="btn btn-info btn-lg">视频站</h4><hr>
+<ol class="rectangle-list">
+<li><a href="http://www.bilibili.com/" target="_blank">BiliBili</a></li>
+<li><a href="http://www.piaohua.com/" target="_blank">飘花</a></li>
+<ol class="rectangle-list">
+
+</ol>
+
 <hr><h4 class="btn btn-primary btn-lg">Node相关</h4><hr>
 <ol class="rounded-list">
 <li><a href="https://nodeschool.io/" target="_blank">NODESCHOOL</a></li>
