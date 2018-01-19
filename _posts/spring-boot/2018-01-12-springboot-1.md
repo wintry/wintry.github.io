@@ -27,11 +27,73 @@ tag: [springboot]
 ![](/img_blog/spring-boot/2018-01-12-2.png)  
 3.填写各种信息，其中```Packaging```为打包方式，看喜好选择
 ![](/img_blog/spring-boot/2018-01-12-3.png)  
-4.选择依赖，为了便于学习，这里不做选择（后面可以添加），熟悉后可以在这里就选择
+4.选择依赖，为了便于学习，这里不做选择（后面可以添加），熟悉后可以在这里就选择，SpringBoot版本也在这里选择，本文选择1.5.9
 ![](/img_blog/spring-boot/2018-01-12-4.png)
 5.选择存储路径
 ![](/img_blog/spring-boot/2018-01-12-5.png)
 ## 项目结构解析
 ![](/img_blog/spring-boot/2018-01-12-6.png)  
 + ```src/main/java/com.{groupid}.{projectname}``` 项目的java包，代码也主要在这里编写，该目录下的```{projectname}Application```为项目的执行文件  
-+ ```src/main/resources``` 项目的配置文件，其中```application.properties```为默认配置，也可以使用```yml```格式的文件，这个目录也可以在后面添加其他的配置文件 
++ ```src/main/resources``` 项目的配置文件，其中```application.properties```为默认配置，也可以使用```yml```格式的文件，这个目录也可以在后面添加其他的配置文件  
+
+## 引入web模块依赖  
+当前项目只有2个模块,```pom.xml```内容如下：  
++ ```spring-boot-starter```  核心模块，各种自动配置
++ ```spring-boot-starter-test``` 测试模块  
+
+```xml
+<dependencies>
+	<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+	</dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+```
+2个模块的版本记录在：
+```xml
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.9.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
+在这里修改可以调整SpringBoot的版本  
+
+引入Web模块，需添加```spring-boot-starter-web```依赖：
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+这里Idea会提示导入依赖  
+![](/img_blog/spring-boot/2018-01-12-7.png)  
+选择导入或者自动导入（以后```pom.xml```有修改就会自动导入）都没有问题  
+
+## 编写HelloWorld  
+2. 创建```package```命名为```com.{groupid}.{projectname}.controller``` 
+2. 创建```HelloController```类，内容如下  
+
+```java
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @RequestMapping("/hello")
+    public String index() {
+        return "Hello World";
+    }
+
+}
+```  
+
+启动```{projectname}Application```,打开浏览器访问```http://localhost:8080/hello```，可以看到页面输出```Hello World```
