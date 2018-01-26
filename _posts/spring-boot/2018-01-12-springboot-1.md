@@ -8,7 +8,8 @@ tag: [springboot]
 * content
 {:toc}
 
-这是记录spring boot开发的博客，一为分享，二为自己查询用。 
+这是记录spring boot开发的博客，一为分享，二为自己查询用。   
+本文源码在[github](https://github.com/wintry/LearnSpringBoot/tree/master/springboot-1)，欢迎star、fork
 
 <!-- more -->
 ## 你需要
@@ -16,7 +17,7 @@ tag: [springboot]
 + ```IntelliJ IDEA ```
 + ```Maven ```  
 
-本文使用 ```java 1.8.0_151 ```,```IntelliJ IDEA 2017.3.2```,```IDEA自带的maven```,调试通过
+本文使用 ```java 1.8.0_151 ```,```IntelliJ IDEA 2017.3.2```,```IDEA自带的maven```,调试通过  
 <!-- TOC -->
 
 ## 使用Maven构建项目 
