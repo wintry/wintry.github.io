@@ -16,7 +16,7 @@ ASF是目前最为广泛使用的steam挂卡软件，由[JustArchi](https://gith
 ## 准备
 + linux服务器（阿里云，腾讯云，搬瓦工等均可），也可以是树莓派这样的设备  
 + ASF软件挂卡软件 [ArchiSteamFarm](https://github.com/JustArchi/ArchiSteamFarm/releases/)  也可以先不下载，在服务器上使用wget下载使用  
-注意请下载Latest release版本，Pre-release为预发布版本，可能存在bug
+注意请下载Latest release版本，Pre-release为预发布版本，可能存在bug  
   - 64位请下载 ASF-linux-x64.zip  
   - 32位请下载 ASF-linux-arm.zip  
 + SSH工具 Xshell，putty等  

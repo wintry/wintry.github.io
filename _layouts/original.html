@@ -30,13 +30,21 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="panel docs-content">
-        <article class="post-content">
-          <div class="wrapper">
-            {% include LessOrMore/comments %} 
-          </div>
-        </article>
-      </div>
+      <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+        var gitment = new Gitment({
+          id: window.location.pathname, 
+          owner: 'wintry',
+          repo: 'wintry.github.io',
+          oauth: {
+          client_id: 'a64aa2568ef6f983bff1',
+          client_secret: '7a8d07a6ed3651efbeab8324483bc32a3ed280a4',
+          },
+        })
+        gitment.render('container')
+      </script>
     </div>
   </div>
 </div>
