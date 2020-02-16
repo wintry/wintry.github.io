@@ -3,7 +3,7 @@ layout: post
 title: "Spring Boot Actuator"
 date: 2020-02-16 11:00:00 +0800 
 categories: springboot之路
-tag: [Spring Boot Actuator]
+tag: [actuator]
 ---
 * content
 {:toc}
