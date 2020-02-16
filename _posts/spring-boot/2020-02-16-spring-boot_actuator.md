@@ -2,8 +2,8 @@
 layout: post/original
 title: "Spring Boot Actuator"
 date: 2020-02-16 11:00:00 +0800 
-categories: 分类
-tag: [taga,tagb]
+categories: springboot之路
+tag: [Spring Boot Actuator]
 ---
 * content
 {:toc}
