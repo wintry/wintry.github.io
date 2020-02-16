@@ -20,7 +20,12 @@ Spring Boot Actuator监控端点小结
   <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
-重新启动后，可以在控制台看到如下输出： 
+重新启动后，在控制台看到如下输出： 
+```
+INFO 1264 --- [nio-8080-exec-3] s.b.a.e.m.MvcEndpointSecurityInterceptor : Full authentication is required to access actuator endpoints. Consider adding Spring Security or set 'management.security.enabled' to false.
+```
+根据提示，在配置文件中添加management.security.enabled=false
+重新启动后，如下  
 ![](/img_blog/spring-boot/2020-02-16-1.png)  
 
 上图显示了一批端点定义，这些端点并非我们自己在程序中创建，而是由spring-boot-starter-actuator模块根据应用依赖和配置自动创建出来的监控和管理端点。通过这些端点，我们可以实时的获取应用的各项监控指标，比如：访问/health端点，我们可以获得如下返回的应用健康信息：
