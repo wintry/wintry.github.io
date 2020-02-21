@@ -14,14 +14,14 @@ Spring Boot中使用Actuator的/info端点输出Git版本信息
 <!-- TOC -->
 ## POM配置
 首先，我们可以挑选任意一个Spring Boot项目，修改它的pom.xml：  
-* 引入 ```spring-boot-starter-actuator```,提供```/info```端点  
+引入 ```spring-boot-starter-actuator```,提供```/info```端点  
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ```
-- 添加```git-commit-id-plugin``` 插件，该插件用来产生git的版本信息： 
+添加```git-commit-id-plugin``` 插件，该插件用来产生git的版本信息： 
 ```
 <plugin>
     <groupId>pl.project13.maven</groupId>
