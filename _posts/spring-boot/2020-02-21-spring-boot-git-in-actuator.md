@@ -13,7 +13,7 @@ Spring Boot中使用Actuator的/info端点输出Git版本信息
 <!-- more -->
 <!-- TOC -->
 ## POM配置
-首先，我们可以挑选任意一个Spring Boot项目，修改它的pom.xml：
+首先，我们可以挑选任意一个Spring Boot项目，修改它的pom.xml：  
 * 引入 ```spring-boot-starter-actuator```,提供```/info```端点
 ```xml
 <dependency>
