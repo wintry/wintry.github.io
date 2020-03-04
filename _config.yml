@@ -9,7 +9,7 @@ baseurl: ""  #根目录
 description: you don't need sex,life fucks you everyday
 motto: 搞it的,未来大概修(jian)电(la)脑(ji)。
 #motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
-banner: 这家伙很懒,什么都没留下。
+banner: 不要跟我谈什么爱情，这个东西我以前相信，现在也相信，但是不相信会落到我头上。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
@@ -18,7 +18,7 @@ paginate_path: "page:num"
 plugins: [jekyll-paginate]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: wintry
-highlighter: rouge
+highlighter: rouge 
 markdown: kramdown
 FB:
   comments :
