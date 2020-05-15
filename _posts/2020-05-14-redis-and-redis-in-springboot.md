@@ -43,6 +43,42 @@ OK
 127.0.0.1:6379>  
 ```  
 
+### hash
+简单来讲，就是key-key-value,也就是hash里存储着键值对   
+``` shell
+127.0.0.1:6379> hmset hkey key1 value1 key2 value2
+OK
+127.0.0.1:6379> hget hkey key1
+"value1"
+127.0.0.1:6379> 
+```  
+
+### List 
+Redis列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边） 
+``` shell
+127.0.0.1:6379> lpush lkey value1
+(integer) 1
+127.0.0.1:6379> lpush lkey value2
+(integer) 2
+127.0.0.1:6379> lpush lkey value3
+(integer) 3
+127.0.0.1:6379> lrange lkey 0 2
+1) "value3"
+2) "value2"
+3) "value1"
+``` 
+当然也可以通过序列设置值
+```shell
+lset lkey 0 newvalue
+OK
+127.0.0.1:6379> lrange lkey 0 2
+1) "newvalue"
+2) "value2"
+3) "value1"
+``` 
+
+### 小应用
+由于redis操作的原子性，利用redis和hash就可以做很多事情，比如[红包](2018-07-30-redis-red-packet)
 
 
 
