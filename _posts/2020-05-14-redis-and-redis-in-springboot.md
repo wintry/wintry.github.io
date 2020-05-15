@@ -78,7 +78,7 @@ OK
 ``` 
 
 ### 小应用
-由于redis操作的原子性，利用redis和hash就可以做很多事情，比如[红包](2018-07-30-redis-red-packet)
+由于redis操作的原子性，利用redis和hash就可以做很多事情，比如[红包](../../../../2018/07/30/redis-red-packet/)
 
 
 
