@@ -81,6 +81,55 @@ OK
 由于redis操作的原子性，利用redis和hash就可以做很多事情，比如[红包](../../../../2018/07/30/redis-red-packet/)
 
 
+### Set 
+Redis 的 Set 是 String 类型的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据。 
+``` shell
+127.0.0.1:6379> sadd skey value1 
+(integer) 1
+127.0.0.1:6379> sadd skey value2
+(integer) 1
+127.0.0.1:6379> sadd skey value3
+(integer) 1
+127.0.0.1:6379> srandmember skey 1      #随机返回
+1) "value2"
+127.0.0.1:6379> srandmember skey 1
+1) "value3"
+127.0.0.1:6379> srandmember skey 1
+1) "value3"
+127.0.0.1:6379> smembers skey
+1) "value3"
+2) "value2"
+3) "value1"
+127.0.0.1:6379> spop skey 1      #随机移出并返回
+1) "value3"
+127.0.0.1:6379> spop skey 1
+1) "value1"
+127.0.0.1:6379> spop skey 1
+1) "value2"
+127.0.0.1:6379> smembers skey
+(empty list or set)
+``` 
+所以上面讲的红包其实用set也是可以的  
+
+### sorted set 
+Redis 有序集合和集合一样也是string类型元素的集合,且不允许重复的成员。 
+不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。 
+有序集合的成员是唯一的,但分数(score)却可以重复。 
+``` shell
+127.0.0.1:6379> zadd zkey 1  value1
+(integer) 1
+127.0.0.1:6379> zadd zkey 2  value2 
+(integer) 1
+127.0.0.1:6379> zadd zkey 2  value3 
+(integer) 1
+127.0.0.1:6379> zrange zkey 0 10 withscores
+1) "value1"
+2) "1"
+3) "value2"
+4) "2"
+5) "value3"
+6) "2"
+``` 
 
 
 
