@@ -17,9 +17,9 @@ tag: [redis,springboot]
 当然不只这一点：
 * 支持数据持久，数据存到磁盘中，重启重新加载使用； 
 - 不仅仅是key-value，同时还提供list，set，sorted set，hash等数据结构的存储； 
-* Redis支持数据的备份，即[master-slave](##master-slave)模式的数据备份。 
+* Redis支持数据的备份，即[master-slave](#master-slave)模式的数据备份。 
 - 性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s.  
-* 原子 – Redis的所有操作都是[原子性](##原子性)的，同时Redis还支持对几个操作全并后的原子性执行。 
+* 原子 – Redis的所有操作都是[原子性](#原子性)的，同时Redis还支持对几个操作全并后的原子性执行。 
 - 丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性
 
 
