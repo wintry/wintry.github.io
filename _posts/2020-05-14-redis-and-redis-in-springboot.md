@@ -40,7 +40,8 @@ OK
 OK
 127.0.0.1:6379> get test-key 
 "test-string"
-127.0.0.1:6379>  
+127.0.0.1:6379> expire test-key 300
+(integer) 1 
 ```  
 
 ### hash
