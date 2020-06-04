@@ -136,6 +136,7 @@ Redis 的 Set 是 String 类型的无序集合。集合成员是唯一的，这�
 ``` shell
 docker pull erikdubbelboer/phpredisadmin
 docker run  -it -d -e REDIS_1_HOST=10.1.25.121 -e REDIS_1_NAME=MyRedis -e REDIS_1_PORT=6379 -e REDIS_1_AUTH=123456 -e ADMIN_USER=admin -e ADMIN_PASS=admin  -p 2080:80 erikdubbelboer/phpredisadmin   
+```
 
 
 
