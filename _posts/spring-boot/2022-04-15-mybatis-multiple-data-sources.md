@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "mybatis多数据源"
-date: 2020-02-21 11:00:00 +0800 
+title: "mybatis多数据源配置"
+date: 2022-04-15 16:29:00 +0800 
 categories: springboot之路
 tag: [mybatis]
 ---
