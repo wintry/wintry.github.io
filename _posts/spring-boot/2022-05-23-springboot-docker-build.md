@@ -14,8 +14,8 @@ tag: [build,docker]
 <!-- TOC -->
 ### pom.xml配置
 ```xml
- <plugin>
-<groupId>org.apache.maven.plugins</groupId>
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-resources-plugin</artifactId>
     <version>2.5</version>
     <executions>
@@ -38,7 +38,7 @@ tag: [build,docker]
             </resources>
         </configuration>
     </execution>
-</executions>
+    </executions>
 </plugin>
 ```
 
