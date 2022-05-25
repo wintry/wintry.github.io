@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Kotlin:从对比
-Java开始"
+title: "Kotlin:从对比Java开始"
 date: 2017-08-16 11:00:00 +0800 
 categories: Kotlin
 tag: [ Kotlin , Android , Java]
