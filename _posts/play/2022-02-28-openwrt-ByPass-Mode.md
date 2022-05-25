@@ -3,7 +3,7 @@ layout: original
 title: "OpenWrt作旁路由设置"
 date: 2022-02-28 13:59:00 +0800 
 categories: play
-tag: [openwrt]
+tags: [openwrt]
 ---
 * content
 {:toc}

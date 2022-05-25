@@ -3,7 +3,7 @@ layout: post
 title: "利用redis实现红包"
 date: 2018-07-30 11:00:00 +0800 
 categories: 分类
-tag: [redis]
+tags: [redis]
 ---
 * content
 {:toc}

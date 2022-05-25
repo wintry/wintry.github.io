@@ -3,7 +3,7 @@ layout: post
 title: "mybatis多数据源配置"
 date: 2022-04-15 16:29:00 +0800 
 categories: springboot之路
-tag: [mybatis]
+tags: [mybatis]
 ---
 * content
 {:toc}

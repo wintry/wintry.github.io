@@ -3,7 +3,7 @@ layout: original
 title: "在lunux下运行ASF(ArchiSteamFarm)V3"
 date: 2018-03-15 9:16:00 +0800 
 categories: game
-tag: [linux,steam]
+tags: [linux,steam]
 ---
 * content
 {:toc}

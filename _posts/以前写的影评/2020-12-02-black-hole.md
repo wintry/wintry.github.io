@@ -3,7 +3,7 @@ layout: original
 title: "《The black hole》中的体制漏洞和人类贪念"
 date: 2020-12-02 21:59:00 +0800 
 categories: 分类
-tag: [微电影 ]
+tags: [微电影 ]
 ---
 * content
 {:toc}

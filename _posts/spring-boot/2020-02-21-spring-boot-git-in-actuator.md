@@ -3,7 +3,7 @@ layout: post
 title: "Spring Boot中使用Actuator的/info端点输出Git版本信息"
 date: 2020-02-21 11:00:00 +0800 
 categories: springboot之路
-tag: [actuator,git]
+tags: [actuator,git]
 ---
 * content
 {:toc}

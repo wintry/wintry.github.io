@@ -3,7 +3,7 @@ layout: original
 title: "springboot setting up "
 date: 2018-01-12 15:25:00 +0800 
 categories: springboot之路
-tag: [springboot]
+tags: [springboot]
 ---
 * content
 {:toc}
