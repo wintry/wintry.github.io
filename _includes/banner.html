@@ -4,7 +4,7 @@
   	{% if page.categories != null %}
     	<a href="{{ '/categories/' | prepend: site.baseurl }}#{{ page.categories }}-ref">{{page.categories}}</a>	/
       {% for tag in page.tags %}
-      <a class="tags-post" href="/tag/#{{ tag }}-ref">{{ tag }}</a>
+      <a class="tags-post" href="/tag/#{{ tag }}-ref">{{tag}}</a>
       {% endfor %}
     {% else %}
     	{{ site.banner }}
