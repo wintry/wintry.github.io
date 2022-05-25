@@ -3,7 +3,7 @@ layout: post
 title: "springboot打包jar时复制配置文件，打包docker复制配置文件"
 date: 2022-05-23 18:38:00 +0800 
 categories: springboot之路
-tag: [build,docker]
+tag: [build, docker]
 ---
 * content
 {:toc}
