@@ -34,6 +34,9 @@ audio:not([controls]){display:none;height:0}
 .excerpt{margin:6px 0 20px}
 .tags-title{padding:2px 4px;background:#b9c8e0;border-radius:5px;margin-left:18px;color:#2c4d68}
 .tags-title:hover{text-decoration:none;color:#000}
+.tags-post{padding:2px 4px;background:#b9c8e0;border-radius:5px;margin-left:18px;color:#495a68}
+.tags-post:hover{text-decoration:none;color:#000}
+.tags-post{margin-left:6px}
 html{font-family:'Gotham','Microsoft YaHei',sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body,button,figure,input,select,textarea{margin:0}
 a{background:0 0}
