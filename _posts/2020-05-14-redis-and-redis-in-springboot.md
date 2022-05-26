@@ -2,7 +2,7 @@
 layout: original
 title: "简单了解redis和redis应用"
 date: 2020-05-14 18:31:27 +0800 
-categories: 分类
+categories: redis
 tags: [redis, springboot]
 ---
 * content
