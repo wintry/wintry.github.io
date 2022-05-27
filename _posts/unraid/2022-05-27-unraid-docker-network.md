@@ -8,7 +8,7 @@ tags: [unraid, docker, docker network]
 * content
 {:toc}
 
-unraid的网关指向旁路由，容器指向软路由
+unraid的网关指向旁路由，容器指向主路由
 
 <!-- more -->
 <!-- TOC -->
