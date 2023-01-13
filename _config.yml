@@ -7,9 +7,10 @@ resume_site: http://codexu.site/me/
 github: https://github.com/wintry/
 baseurl: ""  #根目录
 description: you don't need sex,life fucks you everyday
-motto: 搞it的,未来大概修(jian)电(la)脑(ji)。
+motto: 牛马的一生不该是十四亿的重复，而应该是各有各的精彩。  
+#motto: 搞it的,未来大概修(jian)电(la)脑(ji)。
 #motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
-banner: 不要跟我谈什么爱情，这个东西我以前相信，现在也相信，但是不相信会落到我头上。
+banner: 牛马的一生不该是十四亿的重复，而应该是各有各的精彩。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
